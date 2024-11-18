@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    .ham .hamline1,
+    .hamline2,
+    .hamline3 {
+        @apply block h-[2px] md:h-[2.5px] lg:h-[3px];
+    }
+
+    .hamline1 {
+        border-top-right-radius: 3px;
+    }
+
+    .hamline2 {
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 1px;
+    }
+
+    .hamline3 {
+        border-bottom-right-radius: 3px;
+    }
+
+    .ham-ul-options li a {
+        @apply block py-3 opacity-90 transition-colors duration-200 ease-in;
+    }
+
+    .ham-ul-options li:not(:last-of-type) a {
+        @apply border-b border-tertiary border-opacity-15;
+    }
+
+    .ham-ul-options li:first-of-type a {
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+
+    .ham-ul-options li:last-of-type a {
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .ham-ul-options li a:hover {
+        @apply bg-cta text-tertiary;
+    }
+
+    .searchBar-container>input {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .magnifyingGlassIcon-container {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .magnifyingGlass {
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .heroSection {
+        background-image: url('../public/assets/images/heroSectionImage.jpg');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: lighten;
+    }
+
+    .hero-cta {
+        text-shadow: 1px 1px hsla(345, 91%, 14%, 0.326)
+    }
+
+    .getStarted-heading {
+        background-color: hsl(0, 9%, 22%);
+    }
+
+    .card-heading {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        background-color: hsla(345, 66%, 72%, 0.795);
+    }
+
+    .card-cta {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s cubic-bezier(0.2, 0.5, 0.5, 0.2);
+    }
+
+    .explore_links li a {
+        opacity: 0.7;
+        transition: opacity 0.1s ease-in;
+        cursor: pointer;
+    }
+
+    .explore_links li a:hover {
+        opacity: 1;
+    }
+
+    .card-cta:hover {
+        @apply bg-cta_hover;
+    }
+
+    /*Movies*/
+    .slider > div {
+        @apply rounded-lg;
+    }
+
+    .truncatedText-moviesHero, .trendingCard-header {
+        text-shadow: 1px 1px 2px hsla(345, 92%, 14%, 0.443);
+    }
+
+    .trendingMovieCard-quality {
+        border-radius: 0.5rem 0 0.5rem;
+    }
+
+    .trendingImage {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    /*Movies Trending*/
+    .Trending-header {
+        text-shadow: 1px 1px 2px hsla(345, 84%, 88%, 0.126);
+    }
+
+    .trendingHeading-movies {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .trendingHeading-tv {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .trendingMovieCard-ImageContainer > img {
+        transition: transform 0.2s ease-in;
+    }
+
+    .trendingMovieCard:hover .trendingMovieCard-ImageContainer > img {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width:639px) {
+    .searchBar-container>input {
+        border-top-left-radius: 15px !important;
+        border-bottom-left-radius: 15px;
+    }
+
+    .trendingMovieCard-ImageContainer {
+        @apply h-[210px];
+    }
+}
+
+@media screen and (max-width:550px) {
+    .trendingMovieCard-ImageContainer {
+        @apply h-[180px];
+    }
+
+    .cardTime ,.cardYear {
+        @apply text-[10px];
+    }
+}
+
+@media screen and (max-width:475px) {
+    .TrendingListing {
+        @apply grid-cols-2;
+    }
+
+    .GrowBond {
+        @apply text-2xl;
+    }
+
+    .Quote, .linkContainer, .linkContainer > .contact *, .small-footer{
+        @apply text-sm;
+    }
+
+    .link-icons * {
+        @apply text-xl;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .trendingMovieCard-ImageContainer {
+        @apply h-[150px];
+    }
+}
+
+
+
+@media screen and (min-width: 200px) {
+    .watchNow {
+        @apply w-[95%];
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .watchNow {
+        @apply w-[85%];
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .watchNow {
+        @apply w-[70%];
+    }
+}
+
+@media screen and (min-width:640px) {
+    .ham-ul-options li a {
+        @apply py-4;
+    }
+}
