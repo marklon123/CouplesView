@@ -8,12 +8,12 @@ import './index.css';
 function App() {
   return (
     <>
-    <Header />
-    <Routes>
-      <Route path="/" element={<GetStarted />} />
-      <Route path="/movies" element={<Movies />} />
-    </Routes>
-    <Footer />
+      <Header />
+      <Routes>
+        <Route path="/" element={<GetStarted />} />
+        <Route path="/movies" element={<Movies />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
