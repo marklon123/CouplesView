@@ -150,9 +150,9 @@ function TopRatedMovies() {
                             </div>
                             <div className="mt-1">
                                 <span className="flex items-center">
-                                    <p className="cardTime text-tertiary text-[12px] sm:text-sm">{`${currentMedia?.runtime} min`}</p>
+                                    <p className="cardTime text-tertiary text-[13px] md:text-sm">{`${currentMedia?.runtime} min`}</p>
                                     <i className="fa-solid fa-circle text-tertiary text-[2px] sm:text-[3px] mx-2"></i>
-                                    <p className="cardYear text-secondary text-[12px] sm:text-sm">{`${year}`}</p>
+                                    <p className="cardYear text-secondary text-[13px] md:text-sm">{`${year}`}</p>
                                 </span>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ function TopRatedMovies() {
 
 
     return (
-        <section className="flex justify-center px-2">
+        <section className="flex justify-center">
             <div className="container relative p-2 pb-4">
                 <div className="absolute inset-0 bg-primary_variant rounded-lg"></div>
                 <div className="heading relative">

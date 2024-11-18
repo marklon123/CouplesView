@@ -48,9 +48,10 @@ function Header() {
         function closeSearchBarOnClick(e) {
             const magnifyingGlassIconContainer = document.querySelector(".magnifyingGlassIcon-container");
             const magnifyingGlass = document.querySelector(".magnifyingGlassPrev");
+            const searchBarContainer = document.querySelector(".searchBar-container");
             const searchBar = document.querySelector(".searchBar");
 
-            if ((searchBar && searchBar !== e.target && !searchBar.classList.contains("hidden")) && 
+            if ((searchBar && searchBar !== e.target && !searchBar.classList.contains("hidden") && !searchBarContainer.contains(e.target)) && 
             (magnifyingGlass && magnifyingGlass !== e.target) && 
             (magnifyingGlassIconContainer && !magnifyingGlassIconContainer.contains(e.target))) {
                 magnifyingGlassIconContainer.classList.remove('bg-tertiary', 'bg-opacity-90', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
