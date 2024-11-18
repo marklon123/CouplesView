@@ -112,15 +112,15 @@ function Header() {
         <section className="sticky inset-0 z-50 bg-primary flex justify-center w-full px-2 bg-opacity-[.95]">
             <header className="container flex items-center justify-between pt-2 pb-2">
                 <div className="flex items-center">
-                    <a href="/" className="block mr-2 w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] rounded-full">
+                    <a href="/" className="block mr-2 w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] rounded-full">
                         <Image imageName="logo.png" className="h-full w-full rounded-full" />
                     </a>
-                    <div onClick={(e) => { toggleDisplay(e) }} className="relative cursor-pointer ham flex flex-col justify-between h-[20px] w-[30px] sm:h-[25px] sm:w-[35px] lg:h-[30px] md:w-[40px]">
+                    <div onClick={(e) => { toggleDisplay(e) }} className="relative cursor-pointer ham flex flex-col justify-between h-[25px] w-[35px] lg:h-[30px] md:w-[40px]">
                         <div className="w-[92%] b hamline hamline1"></div>
                         <div className="self-end w-[80%] hamline hamline2"></div>
                         <div className="w-[92%] hamline hamline3"></div>
-                        <nav className={`${display} absolute ham-ul-options items-center top-[40px] sm:top-[47px] lg:top-[54px] 2xl:top-[59px] bg-secondary rounded-lg`}>
-                            <ul className="w-[200px] sm:w-[250px] 2xl:w-[300px] text-cta list-none no-underline text-center sm:text-lg 2xl:text-xl">
+                        <nav className={`${display} absolute ham-ul-options items-center top-[45px] sm:top-[47px] lg:top-[54px] 2xl:top-[59px] bg-secondary rounded-lg`}>
+                            <ul className="w-[250px] xl:w-[300px] text-cta list-none no-underline text-center sm:text-lg 2xl:text-xl">
                                 <li><a href="/" className={`${pathname == "/" ? "bg-cta text-tertiary" : ""}`}>Get started</a></li>
                                 <li><a href="/movies" className={`${pathname == "/movies" ? "bg-cta text-tertiary" : ""}`}>Movies</a></li>
                                 <li><a className={`${pathname == "/genres" ? "bg-cta text-tertiary" : ""}`}>Genres</a></li>
@@ -131,7 +131,7 @@ function Header() {
                 </div>
                 <div className="flex items-center justify-end ml-3 w-full sm:w-[50%]">
                     {pathname !== "/" && (
-                        <div className="searchBar-container flex justify-end no-wrap w-full h-[27px] sm:h-[30px] md:h-[32px] xl:h-[36px] 2xl:h-[38px]">
+                        <div className="searchBar-container flex justify-end no-wrap w-full h-[32px] md:h-[32px] xl:h-[36px] 2xl:h-[38px]">
                             <input type="text" className="hidden sm:block searchBar border-opacity-80 sm:focus:border-l-2 sm:focus:border-t-2 sm:focus:border-b-2 focus:border-secondary bg-tertiary bg-opacity-85 px-2 sm:px-1 text-sm md:text-md lg:text-lg w-full h-full outline-none" />
                             <div onClick={() => searchDisplay()} className="magnifyingGlassIcon-container">
                                 <MagnifyingGlassIcon className="magnifyingGlassPrev sm:magnifyingGlass hover:bg-opacity-85 transition-opacity cursor-pointer p-1 h-full  sm:w-[30px] lg:w-[40px] 2xl:w-[45px] bg-secondary text-cta rounded-full sm:rounded-none" />
@@ -139,7 +139,7 @@ function Header() {
                         </div>
                     )}
                     <div className="sm:hidden ml-2">
-                        <UserIcon className="text-tertiary w-[28px]" />
+                        <UserIcon className="text-tertiary w-[32px]" />
                     </div>
                 </div>
                 <div className="hidden sm:flex items-center space-x-3 md:text-lg 2xl:text-xl font-medium">

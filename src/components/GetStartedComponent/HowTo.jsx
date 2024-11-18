@@ -50,7 +50,7 @@ function HowTo() {
             <div className="container flex flex-col items-center">
                 <div id="card-container" className="flex flex-wrap justify-center mt-[40px] px-2">
                     <div className="card flex-1 min-w-[200px] max-w-[250px] text-center rounded-2xl m-2 sm:m-4">
-                        <h3 className="card-heading font-medium text-xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 1</h3>
+                        <h3 className="card-heading font-medium text-2xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 1</h3>
                         <div className="relative h-[200px] sm:h-[240px]">
                             <div className="absolute inset-0 bg-secondary opacity-15"></div>
                             <p className="text-start lg:text-lg xl:text-xl py-2 px-3 text-tertiary overflow-y-auto">
@@ -58,10 +58,10 @@ function HowTo() {
                                 casual viewer or love having movie nights often, we’ve got a plan for you.
                             </p>
                         </div>
-                        <a className="card-cta py-3 block text-lg lg:text-2xl bg-cta text-tertiary">Sign Up Now</a>
+                        <a className="card-cta py-3 block text-xl lg:text-2xl bg-cta text-tertiary">Sign Up Now</a>
                     </div>
                     <div className="card flex-1 min-w-[200px] max-w-[250px] text-center rounded-2xl m-2 sm:m-4">
-                        <h3 className="card-heading font-medium text-xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 2</h3>
+                        <h3 className="card-heading font-medium text-2xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 2</h3>
                         <div className="relative h-[200px] sm:h-[240px] max-h-[300px]">
                             <div className="absolute inset-0 bg-secondary opacity-15"></div>
                             <p className="text-start lg:text-lg xl:text-xl py-2 px-3 text-tertiary overflow-y-auto">
@@ -69,10 +69,10 @@ function HowTo() {
                              you'll find something for every mood and genre.
                             </p>
                         </div>
-                        <a href="/movies" className="card-cta py-3 block text-lg lg:text-2xl bg-cta text-tertiary">Browse Movies</a>
+                        <a href="/movies" className="card-cta py-3 block text-xl lg:text-2xl bg-cta text-tertiary">Browse Movies</a>
                     </div>
                     <div className="card flex-1 min-w-[200px] max-w-[250px] text-center rounded-2xl m-2 sm:m-4">
-                        <h3 className="card-heading font-medium text-xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 3</h3>
+                        <h3 className="card-heading font-medium text-2xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 3</h3>
                         <div className="relative h-[200px] sm:h-[240px] max-h-[300px]">
                             <div className="absolute inset-0 bg-secondary opacity-15"></div>
                             <p className="text-start lg:text-lg xl:text-xl py-2 px-3 text-tertiary overflow-y-auto">
@@ -80,10 +80,10 @@ function HowTo() {
                             distance, with synced streaming and chat options.
                             </p>
                         </div>
-                        <a className="card-cta py-3 block text-lg lg:text-2xl bg-cta text-tertiary">Create Your Room</a>
+                        <a className="card-cta py-3 block text-xl lg:text-2xl bg-cta text-tertiary">Create Your Room</a>
                     </div>
                     <div className="card flex-1 min-w-[200px] max-w-[250px] text-center rounded-2xl m-2 sm:m-4">
-                        <h3 className="card-heading font-medium text-xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 4</h3>
+                        <h3 className="card-heading font-medium text-2xl md:text-3xl text-cta p-2 border-b-2 border-b-cta border-opacity-15">Step 4</h3>
                         <div className="relative h-[200px] sm:h-[240px] max-h-[300px]">
                             <div className="absolute inset-0 bg-secondary opacity-15"></div>
                             <p className="text-start lg:text-lg xl:text-xl py-2 px-3 text-tertiary overflow-y-auto">
@@ -91,7 +91,7 @@ function HowTo() {
                              chat and experience movies as if you were side by side.
                             </p>
                         </div>
-                        <a className="card-cta py-3 block text-lg lg:text-2xl bg-cta text-tertiary">Start Watching</a>
+                        <a className="card-cta py-3 block text-xl lg:text-2xl bg-cta text-tertiary">Start Watching</a>
                     </div>                   
                 </div>
             </div>

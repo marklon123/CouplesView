@@ -11,10 +11,7 @@ const TruncatedText = ({ text, cardWidth, card }) => {
     useEffect(() => {
         const setCardClass = () => {
             const width = window.innerWidth;
-            const sizeClass =
-                width <= 450 ? "text-xs" :
-                    width <= 650 ? "text-sm" : "text-base";
-            setClassName(`MovieCardTitle text-tertiary ${sizeClass} inline`);
+            setClassName(`MovieCardTitle text-tertiary text-sm inline`);
         };
 
         setCardClass();
@@ -151,9 +148,9 @@ function Trending() {
                             </div>
                             <div className="mt-1">
                                 <span className="flex items-center">
-                                    <p className="cardTime text-tertiary text-[11px] sm:text-sm">{`${runtime} min`}</p>
+                                    <p className="cardTime text-tertiary text-[12px] sm:text-sm">{`${runtime} min`}</p>
                                     <i className="fa-solid fa-circle text-tertiary text-[2px] sm:text-[3px] mx-2"></i>
-                                    <p className="cardYear text-secondary text-[11px] sm:text-sm">{`${year}`}</p>
+                                    <p className="cardYear text-secondary text-[12px] sm:text-sm">{`${year}`}</p>
                                 </span>
                             </div>
                         </div>
