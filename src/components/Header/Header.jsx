@@ -51,15 +51,29 @@ function Header() {
             const searchBarContainer = document.querySelector(".searchBar-container");
             const searchBar = document.querySelector(".searchBar");
 
-            if (
-                (searchBar && searchBar !== e.target && !searchBar.classList.contains("hidden") && !searchBarContainer.contains(e.target)) &&
-                (magnifyingGlass && magnifyingGlass !== e.target) && 
-                (magnifyingGlassIconContainer && !magnifyingGlassIconContainer.contains(e.target)) &&
-                !(document.activeElement === searchBar) // Prevent hiding if searchBar is focused
-            ) {
-                magnifyingGlassIconContainer.classList.remove('bg-tertiary', 'bg-opacity-90', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
-                searchBar.classList.add("hidden");
-            }
+            let isUserInteractingWithSearchBar = false;
+
+            searchBar.addEventListener('focus', () => {
+              isUserInteractingWithSearchBar = true;
+            });
+            
+            searchBar.addEventListener('blur', () => {
+              // Reset the flag if necessary (e.g., with a timeout)
+              setTimeout(() => { isUserInteractingWithSearchBar = false; }, 100);
+            });
+            
+            document.addEventListener('click', (e) => {
+              if (
+                  !isUserInteractingWithSearchBar && // Only close if not interacting
+                  (searchBar && searchBar !== e.target && !searchBar.classList.contains("hidden") && !searchBarContainer.contains(e.target)) &&
+                  (magnifyingGlass && magnifyingGlass !== e.target) && 
+                  (magnifyingGlassIconContainer && !magnifyingGlassIconContainer.contains(e.target))
+              ) {
+                  magnifyingGlassIconContainer.classList.remove('bg-tertiary', 'bg-opacity-90', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
+                  searchBar.classList.add("hidden");
+              }
+            });
+            
             
         }
 
