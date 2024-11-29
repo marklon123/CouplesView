@@ -68,7 +68,7 @@ function Header() {
             const searchBar = document.querySelector(".searchBar");
 
             if (searchBar && !searchBar.classList.contains("hidden")) {
-                magnifyingGlassIconContainer.classList.remove('bg-tertiary', 'bg-opacity-90', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
+                magnifyingGlassIconContainer.classList.remove('bg-tertiary', 'bg-opacity-80', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
                 searchBar.classList.add("hidden");
             }
         }
@@ -106,7 +106,7 @@ function Header() {
         const searchBar = document.querySelector(".searchBar");
 
         if (magnifyingGlassIconContainer && (searchBar && searchBar.classList.contains("hidden")) && window.innerWidth <= 639) {
-            magnifyingGlassIconContainer.classList.add('bg-tertiary', 'bg-opacity-90', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
+            magnifyingGlassIconContainer.classList.add('bg-tertiary', 'bg-opacity-80', 'sm:bg-none', 'p-[2px]', 'sm:p-0');
             searchBar.classList.remove("hidden");
         }
     }
@@ -137,7 +137,7 @@ function Header() {
                         <div className="searchBar-container flex justify-end no-wrap w-full h-[32px] md:h-[32px] xl:h-[36px] 2xl:h-[38px]">
                             <input type="text" className="hidden sm:block searchBar border-opacity-80 sm:focus:border-l-2 sm:focus:border-t-2 sm:focus:border-b-2 focus:border-secondary bg-tertiary bg-opacity-80 px-2 sm:px-1 text-sm md:text-md lg:text-lg w-full h-full outline-none" />
                             <div onClick={() => searchDisplay()} className="magnifyingGlassIcon-container">
-                                <MagnifyingGlassIcon className="magnifyingGlassPrev sm:magnifyingGlass hover:bg-opacity-85 transition-opacity cursor-pointer p-1 h-full  sm:w-[30px] lg:w-[40px] 2xl:w-[45px] bg-secondary text-cta rounded-full sm:rounded-none" />
+                                <MagnifyingGlassIcon className="magnifyingGlassPrev sm:magnifyingGlass cursor-pointer p-1 h-full sm:w-[30px] lg:w-[40px] 2xl:w-[45px] bg-secondary text-cta rounded-full sm:rounded-none" />
                             </div>
                         </div>
                     )}
