@@ -183,8 +183,8 @@ function TopRatedMovies() {
                 <div className="heading relative">
                     <div className="flex justify-between items-center pt-2 sm:pt-3">
                         <h1 className="trendingHeading text-tertiary text-lg md:text-2xl 2xl:3xl font-medium">Top Rated Movies</h1>
-                        <a className="cursor-pointer flex items-center flex-nowrap bg-secondary bg-opacity-80 rounded-full p-[2px] px-2 sm:p-[1px] sm:px-3 md:px-4">
-                            <p className="text-cta text-sm sm:text-base lg:text-md flex items-center mb-[2.25px] sm:mb-[4.5px]">more</p>
+                        <a className="flex items-center leading-none cursor-pointer bg-secondary rounded-full bg-opacity-80 p-[2px] px-2 sm:p-[1px] sm:px-3 md:px-4">
+                            <p className="text-cta text-sm md:text-base mb-[2px] sm:mb-1">more</p>
                             <ChevronDoubleRightIcon className="ml-1 w-[12px]" />
                         </a>
                     </div>

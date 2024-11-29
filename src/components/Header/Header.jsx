@@ -135,7 +135,7 @@ function Header() {
                 <div className="flex items-center justify-end ml-3 w-full sm:w-[50%]">
                     {pathname !== "/" && (
                         <div className="searchBar-container flex justify-end no-wrap w-full h-[32px] md:h-[32px] xl:h-[36px] 2xl:h-[38px]">
-                            <input type="text" className="hidden sm:block searchBar border-opacity-80 sm:focus:border-l-2 sm:focus:border-t-2 sm:focus:border-b-2 focus:border-secondary bg-tertiary bg-opacity-85 px-2 sm:px-1 text-sm md:text-md lg:text-lg w-full h-full outline-none" />
+                            <input type="text" className="hidden sm:block searchBar border-opacity-80 sm:focus:border-l-2 sm:focus:border-t-2 sm:focus:border-b-2 focus:border-secondary bg-tertiary bg-opacity-80 px-2 sm:px-1 text-sm md:text-md lg:text-lg w-full h-full outline-none" />
                             <div onClick={() => searchDisplay()} className="magnifyingGlassIcon-container">
                                 <MagnifyingGlassIcon className="magnifyingGlassPrev sm:magnifyingGlass hover:bg-opacity-85 transition-opacity cursor-pointer p-1 h-full  sm:w-[30px] lg:w-[40px] 2xl:w-[45px] bg-secondary text-cta rounded-full sm:rounded-none" />
                             </div>
