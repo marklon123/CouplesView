@@ -184,8 +184,8 @@ function PopularMovies() {
                     <div className="flex justify-between items-center pt-2 sm:pt-3">
                         <h1 className="trendingHeading text-tertiary text-lg md:text-2xl 2xl:3xl font-medium">Popular Movies</h1>
                         <a className="flex items-center leading-none cursor-pointer bg-secondary rounded-full bg-opacity-80 p-[2px] px-2 sm:p-[1px] sm:px-3 md:px-4">
-                            <p className="text-cta text-sm md:text-base">more</p>
-                            <ChevronDoubleRightIcon className="ml-1 w-[12px] sm:w-[15px]" />
+                            <p className="text-cta text-sm md:text-base lg:text-xl">more</p>
+                            <ChevronDoubleRightIcon className="ml-1 w-[12px] sm:w-[18px] lg:w-[22px]" />
                         </a>
                     </div>
                     <div className="TrendingListing mt-5 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-2">
